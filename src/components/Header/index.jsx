@@ -9,8 +9,7 @@ import { useSelector } from "react-redux";
 import { Nav } from "./styled";
 
 export default function Header() {
-  // eslint-disable-next-line no-unused-vars
-  const btnClick = useSelector((state) => state.btnClick);
+  const btnClick = useSelector((state) => state.example.btnClick);
 
   return (
     <Nav>
