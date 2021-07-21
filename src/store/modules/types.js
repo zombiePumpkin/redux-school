@@ -1,1 +1,3 @@
-export const BTN_CLICK = 'BTN_CLICK';
+export const BTN_CLICK_SUCCESS = 'BTN_CLICK_SUCCESS';
+export const BTN_CLICK_REQUEST = 'BTN_CLICK_REQUEST';
+export const BTN_CLICK_FAILURE = 'BTN_CLICK_FAILURE';
