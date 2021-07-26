@@ -9,15 +9,18 @@ export default createGlobalStyle`
     outline: none;
     box-sizing: border-box;
   }
+
   body {
     font-family: sans-serif;
     background-color: ${colors.primaryDarkColor};
     color: ${colors.primaryDarkColor};
   }
+
   html, border-style, #root {
     width: 100%;
     height: 100%;
   }
+
   button {
     cursor: pointer;
     background-color: ${colors.primaryColor};
@@ -26,20 +29,30 @@ export default createGlobalStyle`
     padding: 10px 20px;
     border-radius: 4px;
     font-weight: 700;
+    transition: all 300ms;
+
+    &:hover{
+      filter: brightness(80%);
+    }
   }
+
   a {
     text-align: none;
     color: ${colors.primaryColor};
   }
+
   ul {
     list-style: none;
   }
+
   body .Toastify .Toastify__toast-container .Toastify__toast--success {
     background-color: ${colors.successColor};
   }
+
   body .Toastify .Toastify__toast-container .Toastify__toast--error {
     background-color: ${colors.errorColor};
   }
+  
   body .Toastify .Toastify__toast-container .Toastify__toast--warning {
     background-color: ${colors.warningColor};
   }
