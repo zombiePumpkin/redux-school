@@ -7,14 +7,14 @@ export function loginSuccess(payload) {
   }
 }
 
-export function LoginFailure(payload) {
+export function loginFailure(payload) {
   return {
     type: types.LOGIN_FAILURE,
     payload
   }
 }
 
-export function LoginRequest(payload) {
+export function loginRequest(payload) {
   return {
     type: types.LOGIN_REQUEST,
     payload
@@ -24,6 +24,27 @@ export function LoginRequest(payload) {
 export function registerRequest(payload) {
   return {
     type: types.REGISTER_REQUEST,
+    payload
+  }
+}
+
+export function registerUpdatedSuccesss(payload) {
+  return {
+    type: types.REGISTER_UPDATED_SUCCESS,
+    payload
+  }
+}
+
+export function registerCreatedSuccesss(payload) {
+  return {
+    type: types.REGISTER_CREATED_SUCCESS,
+    payload
+  }
+}
+
+export function registerFailure(payload) {
+  return {
+    type: types.REGISTER_FAILURE,
     payload
   }
 }

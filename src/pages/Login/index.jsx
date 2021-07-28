@@ -34,7 +34,7 @@ export default function Login(props) {
 
     if (formErrors) return;
 
-    dispatch(actions.LoginRequest({ email, password, prevPath }));
+    dispatch(actions.loginRequest({ email, password, prevPath }));
   }
 
   return (
