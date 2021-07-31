@@ -35,7 +35,7 @@ export default function Student({ match }) {
       try {
         setIsLoading(true);
         const { data } = await axios.get(`/students/${id}`);
-        const Photo = get(data, "Photos[0].url", "");
+        const Photo = get(data, "student.Photos[0].url", "");
         setPhoto(Photo);
 
         setName(data.student.name);
